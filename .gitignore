@@ -1,0 +1,22 @@
+# gradle
+.gradle/
+build/
+out/
+
+# loom run directory
+run/
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+
+# os and jvm
+.DS_Store
+hs_err_*.log
