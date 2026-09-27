@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "no_item_break",
+	"name": "No Item Break",
+	"version": "${version}",
+	"description": "Takes your tools, weapons and armor off before they break: when an item you use wears down to 10 durability, it is moved to your inventory.",
+	"authors": [
+		"xeylou"
+	],
+	"icon": "assets/no_item_break/icon.png",
+	"contact": {
+		"homepage": "https://github.com/xeylou/no-item-break",
+		"sources": "https://github.com/xeylou/no-item-break",
+		"issues": "https://github.com/xeylou/no-item-break/issues"
+	},
+	"license": "Apache-2.0",
+
+	"environment": "client",
+	"mixins": [
+		"no_item_break.mixins.json"
+	],
+
+	"depends": {
+		"fabricloader": ">=0.19.0",
+		"minecraft": ">=26.3 <26.4",
+		"java": ">=25"
+	}
+}
