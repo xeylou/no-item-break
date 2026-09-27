@@ -1,0 +1,34 @@
+name: feature request
+description: suggest an idea for the mod.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        this mod is minimal on purpose: no config file, no commands, no menus, no dependencies.
+  - type: textarea
+    id: problem
+    attributes:
+      label: problem
+      description: what situation does the mod handle badly?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: proposed behavior
+      description: what should the mod do instead?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: alternatives
+      description: other solutions you considered, or other mods that already do it.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: checklist
+      options:
+        - label: i searched the existing issues, including closed ones.
+          required: true

@@ -1,0 +1,81 @@
+name: bug report
+description: the mod does not behave as described in the README.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        hi, thanks for taking the time to report a bug!!
+        please check first that it still happens with **only this mod** installed: it makes the bug much faster to find.
+  - type: input
+    id: mod-version
+    attributes:
+      label: mod version
+      placeholder: "1.0.0+26.3"
+    validations:
+      required: true
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: minecraft version
+      placeholder: "26.3"
+    validations:
+      required: true
+  - type: input
+    id: loader-version
+    attributes:
+      label: fabric Loader version
+      placeholder: "0.19.5"
+    validations:
+      required: true
+  - type: dropdown
+    id: world
+    attributes:
+      label: where were you playing?
+      options:
+        - singleplayer
+        - LAN world
+        - on a server
+    validations:
+      required: true
+  - type: input
+    id: server
+    attributes:
+      label: server software
+      description: only for multiplayer. like vanilla, paper, fabric, or the name of the server if you don't know.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: what happened? :)
+      description: what did you expect, & what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: steps to reproduce
+      placeholder: |
+        1. /give @s minecraft:diamond_pickaxe[minecraft:damage=1550]
+        2. mine one stone block
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: other-mods
+    attributes:
+      label: other mods
+      description: does the bug still happen with only this mod installed? if not, list your other mods or the name of your modpack.
+  - type: textarea
+    id: logs
+    attributes:
+      label: log or crash report
+      description: drag & drop `logs/latest.log` (or the crash report) here, or paste a link from https://mclo.gs.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: checklist
+      options:
+        - label: i searched the existing issues, including closed ones.
+          required: true
+        - label: i am using the latest version of the mod.
+          required: true
